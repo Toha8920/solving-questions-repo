@@ -1,10 +1,10 @@
-import { queries } from '@testing-library/react';
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QS from '../QS/QS';
 
 const Question1 = () => {
     const questions = useLoaderData();
+    console.log(questions);
 
     return (
         <div>
