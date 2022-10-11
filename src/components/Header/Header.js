@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
     return (
         <nav>
-            <div className="navbar bg-slate-300">
+            <div className="navbar bg-slate-300 flex-col">
                 <div className="flex-1">
                     <Link className="btn btn-ghost normal-case text-xl">Solving Questions</Link>
                 </div>
