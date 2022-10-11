@@ -1,6 +1,7 @@
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { handleAddQuiz } from '../../loaders/handleQuiz';
 import './Question.css'
 
@@ -10,7 +11,7 @@ const Question = ({ question }) => {
         <div className='question-container p-10 rounded-md'>
 
             <div>
-                <img className='bg-black rounded-md' src={logo} alt="" />
+                <img className='bg-black rounded-md mx-auto' src={logo} alt="" />
 
             </div>
             <div className='display: flex justify-between mt-2'>
@@ -20,7 +21,7 @@ const Question = ({ question }) => {
                 </div>
                 <div>
                     <button onClick={() => handleAddQuiz(id)} className='bg-pink-600 p-2 text-white rounded-md '>
-                        Start Practice
+                        <Link to={`/quiz/${id}`}> Start Practice</Link>
                         <FontAwesomeIcon className='ml-3' icon={faArrowAltCircleRight}></FontAwesomeIcon>
 
                     </button>
