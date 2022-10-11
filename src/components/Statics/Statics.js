@@ -6,7 +6,6 @@ import { Line, LineChart, XAxis, YAxis } from 'recharts';
 const Statics = () => {
     const data = useLoaderData();
 
-    console.log(data);
     return (
         <div>
             <LineChart width={350} height={400} data={data.data}>

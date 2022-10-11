@@ -4,15 +4,19 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <nav className='display: flex justify-between bg-slate-300 h-14 items-center px-20 shadow-lg'>
-            <div className='text-2xl'>
-                <h5>Solving Question</h5>
-            </div>
-            <div className='link-tag'>
-                <Link to='/'>Home</Link>
-                <Link to='topics'>Topics</Link>
-                <Link to='/statics'>Statics</Link>
-                <Link to='/blog'>Blog</Link>
+        <nav>
+            <div className="navbar bg-slate-300">
+                <div className="flex-1">
+                    <Link className="btn btn-ghost normal-case text-xl">Solving Questions</Link>
+                </div>
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal p-0">
+                        <li><Link to='/'>Home</Link></li>
+
+                        <li><Link to='/statics'>Statics</Link></li>
+                        <li><Link to='/blog'>Blog</Link></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     );

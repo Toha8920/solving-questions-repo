@@ -8,7 +8,7 @@ import './Question.css'
 const Question = ({ question }) => {
     const { name, logo, total, id } = question;
     return (
-        <div className='question-container p-10 rounded-md'>
+        <div className='question-container p-4 rounded-md'>
 
             <div>
                 <img className='bg-black rounded-md mx-auto' src={logo} alt="" />

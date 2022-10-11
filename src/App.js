@@ -8,6 +8,7 @@ import Main from './layouts/Main';
 
 
 import Question1 from './components/Question1/Question1';
+import NotFound from './components/NotFound/NotFound';
 
 
 
@@ -50,7 +51,7 @@ function App() {
     },
     {
       path: '*',
-      element: <div>This is not found</div>
+      element: <NotFound></NotFound>
     }
   ])
   return (
